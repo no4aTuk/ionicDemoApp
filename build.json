@@ -1,0 +1,16 @@
+{  
+    "ios": {
+        "debug": {
+          "developmentTeam": "Nikolay Donskikh",
+          "buildFlag": [
+            "-UseModernBuildSystem=0"
+          ]
+        },
+        "release": {
+          "developmentTeam": "Nikolay Donskikh",
+          "buildFlag": [
+            "-UseModernBuildSystem=0"
+          ]
+        }
+      }
+    }
