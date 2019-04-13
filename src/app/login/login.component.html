@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Медлайк
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <video #videoPlayer
+    playsinline
+    loop
+    autoplay="autoplay"
+    preload="auto"
+    src="../../assets/onboarding.mp4"
+    width="100%" 
+    type="video/mp4">
+  </video>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-item>
+              <ion-label position="stacked">Введите номер телефона</ion-label>
+              <ion-input 
+              maxLength="10"
+              imputMode="numeric"
+              type="text"
+              placeholder="+7(ХХХ) ХХ ХХ"
+              clear-input="true"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label position="stacked">Введите пароль</ion-label>
+              <ion-input maxLength="5" 
+              type="password" 
+              imputMode="numeric"
+              pattern="\d{1}" 
+              placeholder="*****" 
+              clear-input="true"></ion-input>
+            </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
