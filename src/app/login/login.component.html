@@ -21,22 +21,26 @@
       <ion-col>
           <ion-item>
               <ion-label position="stacked">Введите номер телефона</ion-label>
-              <ion-input 
+              <ion-input #loginInput
               maxLength="10"
               imputMode="numeric"
               type="text"
               placeholder="+7(ХХХ) ХХ ХХ"
-              clear-input="true"></ion-input>
+              clear-input="true"
+              (ionChange)="loginChanged(loginInput.value)"
+              ></ion-input>
             </ion-item>
           
             <ion-item>
               <ion-label position="stacked">Введите пароль</ion-label>
-              <ion-input maxLength="5" 
+              <ion-input #passwordInput maxLength="5" 
               type="password" 
               imputMode="numeric"
               pattern="\d{1}" 
               placeholder="*****" 
-              clear-input="true"></ion-input>
+              clear-input="true"
+              (ionChange)="passwordChanged(passwordInput.value)"
+              ></ion-input>
             </ion-item>
       </ion-col>
     </ion-row>
