@@ -1,15 +1,15 @@
 {  
     "ios": {
         "debug": {
-          "developmentTeam": "Nikolay Donskikh",
           "buildFlag": [
-            "-UseModernBuildSystem=0"
+            "-UseModernBuildSystem=0",
+            "-allowProvisioningUpdates"
           ]
         },
         "release": {
-          "developmentTeam": "Nikolay Donskikh",
           "buildFlag": [
-            "-UseModernBuildSystem=0"
+            "-UseModernBuildSystem=0",
+            "-allowProvisioningUpdates"
           ]
         }
       }
