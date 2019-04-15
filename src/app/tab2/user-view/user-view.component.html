@@ -1,0 +1,10 @@
+<ion-item-sliding>
+    <ion-item>
+      <ion-icon name="walk"></ion-icon>
+      <ion-label>{{ user.name }}</ion-label>
+      <p>age: {{user.age}}</p>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="click(user)">Action</ion-item-option>
+    </ion-item-options>
+</ion-item-sliding>
