@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { User } from '../models/User';
+import { People } from '../models/people';
 import { Router } from '@angular/router';
 import { Keyboard } from '@ionic-native/keyboard/ngx'
 
@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
 
   @ViewChild('videoPlayer') mVideoPlayer: ElementRef;
 
-  private user: User
+  private user: People
 
   private _login: String = ""
   private _password: String = ""
